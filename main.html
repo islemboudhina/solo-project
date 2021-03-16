@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency convertor</title>
+    <link rel="stylesheet" href="style sheet.css" />
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          location.reload(true);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Currency Converter</h1>
+        <p>This Currency converter will convert all four currencies</p>
+      </div>
+      <div class="currencyInput">
+        <input id="euro" type="number" placeholder="Euro € € €" />
+        <h3>€</h3>
+        <input id="tnd" type="number" placeholder="Tunisian Dinars TND" />
+        <h3>TND</h3>
+        <input id="gbp" type="number" placeholder="Pound Sterling £ £ £" />
+        <h3>£</h3>
+        <input id="usd" type="number" placeholder="US Dollars $ $ " />
+        <h3>$</h3>
+      </div>
+    </div>
+    <button type="button">Reload page</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
